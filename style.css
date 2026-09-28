@@ -1,0 +1,100 @@
+/* ===== Переменные бренда ===== */
+:root {
+    --brand: #6f4e37;          /* кофейный */
+    --brand-dark: #4b3526;
+    --accent: #c8a27a;
+    --bg-soft: #f5f1ec;
+}
+
+/* ===== Базовые стили ===== */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: var(--bg-soft);
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+    color: #2b2b2b;
+    min-height: 100vh;
+}
+
+/* ===== Навбар ===== */
+.navbar-coffee {
+    background: linear-gradient(90deg, var(--brand-dark), var(--brand));
+    box-shadow: 0 2px 8px rgba(0, 0, 0, .15);
+}
+
+.navbar-coffee .navbar-brand {
+    font-weight: 700;
+    letter-spacing: .5px;
+}
+
+/* ===== Карточки ===== */
+.card {
+    border: none;
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, .06);
+}
+
+.card-body {
+    padding: 28px;
+}
+
+/* ===== Формы ===== */
+.form-control:focus {
+    border-color: var(--accent);
+    box-shadow: 0 0 0 .2rem rgba(200, 162, 122, .25);
+}
+
+.btn-primary {
+    background-color: var(--brand);
+    border-color: var(--brand);
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+    background-color: var(--brand-dark);
+    border-color: var(--brand-dark);
+}
+
+/* ===== Таблица ===== */
+.table thead th {
+    background: #efe7dd;
+    color: var(--brand-dark);
+    font-weight: 600;
+    border-bottom: 2px solid #e0d4c5;
+}
+
+.table-hover tbody tr:hover {
+    background: #fbf7f2;
+}
+
+/* ===== Заголовки ===== */
+h3, h4 {
+    color: var(--brand-dark);
+    font-weight: 700;
+}
+
+/* ===== Кнопки в таблице ===== */
+.table .btn-sm {
+    border-radius: 6px;
+    padding: .3rem .7rem;
+}
+
+/* ===== Обёртка форм логина/регистрации ===== */
+.auth-wrap {
+    max-width: 460px;
+    margin: 80px auto;
+}
+
+/* ===== Алерты ===== */
+.alert {
+    border-radius: 8px;
+}
+
+/* ===== Адаптив под 1366x768 ===== */
+@media (max-width: 1366px) {
+    .container {
+        max-width: 1200px;
+    }
+}
